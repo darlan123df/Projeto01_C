@@ -23,8 +23,10 @@ namespace SDC.Controller
         public List<Produto> ListarProdutos(string valorDigitado)
         {
             //Filtando utilisando expressão lambda.
-            List<Produto> produtos = bancoContext.Produtos.Where(prod => prod.descricaoProduto == valorDigitado).ToList();
+            //List<Produto> produtos = bancoContext.Produtos.Where(prod => prod.descricaoProduto == valorDigitado).ToList();
 
+            //Filtando utilisando expressão lambda. Verifica traz o registro começando por qualquer palavra.
+            List<Produto> produtos = bancoContext.Produtos.Where(prod => prod.descricaoProduto.Contains(valorDigitado)).ToList();
             return produtos;
         }
     }

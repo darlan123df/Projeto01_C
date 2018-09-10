@@ -1,0 +1,25 @@
+﻿<Window x:Class="SDC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SDC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="187.5" Width="748.75">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="30" Margin="30,100,0,0" VerticalAlignment="Top" Width="100">
+            <MenuItem Header="Cadastro" Height="30" Width="100" Background="#FF807D7D" FontWeight="Bold" FontFamily="Arial" Foreground="#FFF7F6F6">
+                <MenuItem Name="miCadastrarProduto" Header="Produto"/>
+                <MenuItem Name="miCadastrarCliente" Header="Cliente"/>
+            </MenuItem>
+        </Menu>
+        <Menu HorizontalAlignment="Left" Height="30" Margin="150,100,0,0" VerticalAlignment="Top" Width="100">
+            <MenuItem Header="Pesquisar" Height="30" Width="100" Background="#FF807D7D" FontWeight="Bold" FontFamily="Arial" Foreground="#FFFDFAFA">
+                <MenuItem x:Name="miPesquisarProduto" Header="Produto"/>
+                <MenuItem x:Name="miPesquisarCliente" Header="Cliente"/>
+            </MenuItem>
+        </Menu>
+        <Image Source="C:\Users\Familia\source\repos\SDC\SDC\Imagens\Adm.png" HorizontalAlignment="Left" Height="75" Margin="30,10,0,0" VerticalAlignment="Top" Width="79">
+        </Image>
+    </Grid>
+</Window>

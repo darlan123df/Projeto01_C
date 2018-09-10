@@ -1,0 +1,23 @@
+﻿<Window x:Class="SDC.ViewCadastroCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SDC"
+        mc:Ignorable="d"
+        Title="Cadastro de Cliente" Height="276.064" Width="539.894">
+    <Grid>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="40,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="40,71,0,0" VerticalAlignment="Top"/>
+        <Label Content="Endereço:" HorizontalAlignment="Left" Margin="40,102,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbCpfCliente" HorizontalAlignment="Left" Height="23" Margin="121,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbNomeCliente" HorizontalAlignment="Left" Height="23" Margin="121,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox Name="tbEnderecoCliente" HorizontalAlignment="Left" Height="23" Margin="121,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249"/>
+        <Label Content="Nº:" HorizontalAlignment="Left" Margin="370,102,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbnumeroEndeCliente" HorizontalAlignment="Left" Height="23" Margin="418,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62"/>
+        <Button Name="btNovoCliente" Content="Novo" HorizontalAlignment="Left" Margin="53,173,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="btGravarCliente" Content="Gravar" HorizontalAlignment="Left" Margin="228,173,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Name="btExcluirCliente" Content="Excluir" HorizontalAlignment="Left" Margin="405,173,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
